@@ -40,6 +40,11 @@ body{
 .gnb{
     text-align: center;
     margin-top: 110px;
+    position: relative;
+}
+
+.gnb > li{
+
 }
 
 .gnb > li > a{
@@ -59,10 +64,21 @@ body{
     background-color: #222;
     color: #fff;
 }
+
 .gnb ul{
     display: none;
-    border: 1px solid #666;
+    position: absolute;
+    top: -40px;
+    left: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #222;
+    color: #fff;
+    padding: 0 0 100px;
+    height: 320px;
 }
+
+
 
 .gnb ul li a{
     display: block;
@@ -70,8 +86,8 @@ body{
 }
 
 .gnb ul li a:hover{
-    background-color: #666;
-    color: #fff;
+    background-color: #eee;
+    color: #222;
 }
 
 .right{

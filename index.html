@@ -96,14 +96,16 @@
     </div>
     <script>
         // //메뉴
-        // $('.gnb > li').hover(
-        //     function(){
-        //         $(this).find('ul').slideDown()
-        //     },
-        //     function(){
-        //         $(this).find('ul').slideUp()
-        //     }
-        // )
+        $('.gnb > li').hover(
+            function(){
+                $(this).find('ul').stop().show()
+            },
+            function(){
+                $(this).find('ul').stop().hide()
+            }
+        )
+
+        
 
         // 슬라이드
         // setInterval(function(){
